@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-size: 62.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* nav */
+
+.nav-container {
+  background: rgb(7, 7, 7);
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  list-style: none;
+}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#logo {
+  flex: 3;
+}
+
+.about {
+  background: #2660A4;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+/* home */
+
+.home {
+  background: radial-gradient(#525252, #131313);
+}
+
+.showcase {
+  min-height: 90vh;
+}
+
+.info {
+  padding: 10px;
+}
+
+.description {
+  padding: 10px;
+}
+
+.refreshbutton {
+  background: #C0C0C0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 16px;
+    padding: 20px;
+  }
+  .sidebar {
+    align-self: start;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
